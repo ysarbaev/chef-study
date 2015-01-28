@@ -1,5 +1,11 @@
 <html>
   <body>
-    <h1>Chef</h1>
+    <h1>Chef <%= node['fqdn'] %></h1>
+    <pre>
+    	<%= node['hostname'] %>
+    	<%= node['platform'] %> - <%= node['platform_version'] %>
+    	<%= node['cpu']['total'] %> cpus
+    	<%= node['memory']['total'] %> mem
+    </pre>
   </body>
 </html>
