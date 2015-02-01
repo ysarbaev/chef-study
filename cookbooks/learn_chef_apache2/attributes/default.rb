@@ -1,6 +1,7 @@
 
 case node[:platform_family]
   when "windows"
-    default[:www_home] = "#ENV[HOME]"
+    default[:apache][:www] = "#ENV[HOME]"
   when "centos", "debian"
-    default[:www_home] = "/var/www/html"
+    default[:apache][:www] = "/var/www/html"
+end
