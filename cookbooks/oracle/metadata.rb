@@ -5,4 +5,5 @@ license          'all_rights'
 description      'Installs/Configures oracle'
 long_description 'Installs/Configures oracle'
 version          '0.1.0'
-
+supports         "windows"
+depends          "windows", ">= 1.34.6"
